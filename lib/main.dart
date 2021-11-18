@@ -33,10 +33,51 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
       drawer: MenuNavegacao(),
       appBar: AppBar(
         // ignore: prefer_const_constructors
-        title: Text("Agendamentos King"),
+        title: Text("K Agenda"),
       ),
-      body: Container(),
-      backgroundColor: Colors.blue[100],
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.blue[100],
+        child: Column(
+          children: [
+            // ignore: prefer_const_constructors
+            CircleAvatar(
+              backgroundImage: NetworkImage(
+                  "https://dm2305files.storage.live.com/y4m7cTd9D3axWgzhwTsTyx9GcENKP2XFmxNd9rmyqR8wYk5nsgrSZSABYgV9OO4rA0IKhbjl7H60GsHM-hBUIbZQNK01sqr873ktoYmhpqYC39ZsLXcfFtH5LhvXSnPkNXC7MXAZIcZ2zDrlt8v2RGSPAPL0jCl_PkJ2Kjt0DwQWFoNc4oHD14_c9dm1XqyUGmW?width=500&height=500&cropmode=none"),
+              radius: 60,
+            ),
+            Container(
+              height: 100,
+              width: double.infinity,
+              margin: new EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue[300],
+              ),
+              child: Center(
+                child: Text(
+                  "Nome: Nome Cliente \n\n Horario marcado: ",
+                ),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: double.infinity,
+              margin: new EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue[300],
+              ),
+              child: Center(
+                child: Text(
+                  "Nome: Nome Cliente \n\n Horario marcado: ",
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

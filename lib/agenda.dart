@@ -13,8 +13,22 @@ class Agenda extends StatelessWidget {
         title: Text("Agenda"),
       ),
       //----Calendario------
-      body: SfCalendar(
-        view: CalendarView.month,
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.blue[100],
+        child: Column(
+          children: [
+            Container(
+              height: 350,
+              width: double.infinity,
+              margin: new EdgeInsets.all(10),
+              child: SfCalendar(
+                view: CalendarView.month,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
