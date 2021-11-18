@@ -4,10 +4,10 @@
 
 ## Desenvolvido:
   
-  Emanuel Souza
-  Kaio Renan
-  Lucas de Barros
-  Renata Maciel
-  Thais dos Anjos
-  Wagner Araujo
+  Emanuel Souza;
+  Kaio Renan;
+  Lucas de Barros;
+  Renata Maciel;
+  Thais dos Anjos;
+  Wagner Araujo;
   
