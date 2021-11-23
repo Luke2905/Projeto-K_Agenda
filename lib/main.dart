@@ -40,40 +40,96 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
         width: double.infinity,
         color: Colors.blue[100],
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            // ignore: prefer_const_constructors
             CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://dm2305files.storage.live.com/y4m7cTd9D3axWgzhwTsTyx9GcENKP2XFmxNd9rmyqR8wYk5nsgrSZSABYgV9OO4rA0IKhbjl7H60GsHM-hBUIbZQNK01sqr873ktoYmhpqYC39ZsLXcfFtH5LhvXSnPkNXC7MXAZIcZ2zDrlt8v2RGSPAPL0jCl_PkJ2Kjt0DwQWFoNc4oHD14_c9dm1XqyUGmW?width=500&height=500&cropmode=none"),
               radius: 60,
             ),
-            Container(
-              height: 100,
-              width: double.infinity,
-              margin: new EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.blue[300],
-              ),
-              child: Center(
-                child: Text(
-                  "Nome: Nome Cliente \n\n Horario marcado: ",
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  margin: new EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blue[300],
+                  ),
+                  child: InkWell(
+                    onTap: () => print("Agenda"),
+                    child: Center(
+                      child: Icon(
+                        Icons.calendar_today,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  margin: new EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blue[300],
+                  ),
+                  child: InkWell(
+                    onTap: () => print("Configurações"),
+                    child: Center(
+                      child: Icon(
+                        Icons.settings,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-            Container(
-              height: 100,
-              width: double.infinity,
-              margin: new EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.blue[300],
-              ),
-              child: Center(
-                child: Text(
-                  "Nome: Nome Cliente \n\n Horario marcado: ",
+            // ignore: prefer_const_constructors
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 300,
+                      width: 100,
+                      margin: new EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.blue[300],
+                      ),
+                      child: InkWell(
+                        onTap: () => print("Relatorios"),
+                        child: Center(
+                          child: Icon(
+                            Icons.analytics,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 300,
+                      width: 100,
+                      margin: new EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.blue[300],
+                      ),
+                      child: InkWell(
+                        onTap: () => print("Mensagens"),
+                        child: Center(
+                          child: Icon(
+                            Icons.sms,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
+              ],
             ),
           ],
         ),
