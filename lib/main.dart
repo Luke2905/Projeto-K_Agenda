@@ -40,13 +40,14 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
         width: double.infinity,
         color: Colors.blue[100],
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://dm2305files.storage.live.com/y4m7cTd9D3axWgzhwTsTyx9GcENKP2XFmxNd9rmyqR8wYk5nsgrSZSABYgV9OO4rA0IKhbjl7H60GsHM-hBUIbZQNK01sqr873ktoYmhpqYC39ZsLXcfFtH5LhvXSnPkNXC7MXAZIcZ2zDrlt8v2RGSPAPL0jCl_PkJ2Kjt0DwQWFoNc4oHD14_c9dm1XqyUGmW?width=500&height=500&cropmode=none"),
               radius: 60,
             ),
+            Divider(color: Colors.white24),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -76,10 +77,10 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
                     color: Colors.blue[300],
                   ),
                   child: InkWell(
-                    onTap: () => print("Configurações"),
+                    onTap: () => print("Cortes"),
                     child: Center(
                       child: Icon(
-                        Icons.settings,
+                        Icons.content_cut,
                       ),
                     ),
                   ),
@@ -94,7 +95,7 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      height: 300,
+                      height: 100,
                       width: 100,
                       margin: new EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -111,7 +112,7 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
                       ),
                     ),
                     Container(
-                      height: 300,
+                      height: 100,
                       width: 100,
                       margin: new EdgeInsets.all(10),
                       decoration: BoxDecoration(
