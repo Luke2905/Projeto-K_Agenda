@@ -40,7 +40,7 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
         width: double.infinity,
         color: Colors.blue[100],
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
