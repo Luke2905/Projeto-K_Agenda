@@ -15,7 +15,7 @@ class MenuNavegacao extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Material(
-        color: Colors.blue[800],
+        color: Colors.yellow[400],
         child: ListView(
           children: <Widget>[
             cabecalho(
@@ -83,10 +83,10 @@ class MenuNavegacao extends StatelessWidget {
   menuItem(
       {required String nome, required IconData icone, VoidCallback? tocar}) {
     return ListTile(
-      leading: Icon(icone, color: Colors.white),
+      leading: Icon(icone, color: Colors.black),
       title: Text(
         nome,
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: Colors.black),
       ),
       hoverColor: Colors.white38,
       onTap: tocar,
@@ -113,11 +113,11 @@ class MenuNavegacao extends StatelessWidget {
             children: [
               Text(
                 nome,
-                style: TextStyle(fontSize: 10, color: Colors.white),
+                style: TextStyle(fontSize: 10, color: Colors.black),
               ),
               Text(
                 email,
-                style: TextStyle(fontSize: 10, color: Colors.white),
+                style: TextStyle(fontSize: 10, color: Colors.black),
               ),
             ],
           ),
